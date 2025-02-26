@@ -6,7 +6,33 @@
     <title>Array</title>
 </head>
 <script>
-    
+    let alphabet =["a","b","c","d","c","c","c","c"]
+    //length
+console.log("length of the alphabet:", alphabet.length);
+
+//concat
+let newAlphabet = alphabet.concat(["f","g","h"]);
+console.log("After concat:",newAlphabet);
+
+//push
+alphabet.push("e");
+console.log("After push:",alphabet);
+
+//pop
+let lastElement = alphabet.pop();
+console.log("After pop:",alphabet);
+console.log("removed element:",lastElement);
+
+//shift
+let firstElement = alphabet.shift();
+console.log("After shift:",alphabet);
+console.log("Removed element:", firstElement);
+
+//indexOf
+let indexOfElement = alphabet.indexOf("c");
+console.log("index of 'c':",indexOfElement);
+
+
 </script>
 <body>
     
