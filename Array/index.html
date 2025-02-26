@@ -8,50 +8,50 @@
 <script>
     let alphabet =["a","b","c","d","c","c","c","c"]
     //length
-console.log("length of the alphabet:", alphabet.length);
+console.log("length:",alphabet.length);
 
 //concat():
 let newAlphabet = alphabet.concat(["k","l","m"]);
-console.log("After concat:",newAlphabet);
+console.log("concat:",newAlphabet);
 
 //push():
 alphabet.push("e");
-console.log("After push:",alphabet);
+console.log("push:",alphabet);
 
 //pop():
 let lastElement = alphabet.pop();
-console.log("After pop:",alphabet);
+console.log("pop:",alphabet);
 console.log("removed element:",lastElement);
 
 //shift():
 let firstElement = alphabet.shift();
-console.log("After shift:",alphabet);
+console.log("shift:",alphabet);
 console.log("Removed element:", firstElement);
 
 //indexOf():
 let indexOfElement = alphabet.indexOf("c");
 console.log("index of 'c':",indexOfElement);
-
+  
 //unshift():
 alphabet.unshift("z");
-console.log("After unshift:",alphabet);
-
+console.log("unshift:",alphabet);
+ 
 //slice():
-let sliceArray = alphabet.slice("2,6");
-console.log("After slice:",sliceArray);
+let sliceArray = alphabet.slice(2,6);
+console.log("slice:",sliceArray);
+console.log(alphabet);
 
 //splice():
 alphabet.splice(1,2,"x","y");
-console.log("After splice:",alphabet);
+console.log("splice:",alphabet);
 
-//find():
-let findElement = alphabet.find(item => item === "c");
-console.log("After find:", findElement);
+//find
+let findExample = alphabet.find(item => item=== "c");
+console.log(findExample);
 
-//filter():
-let filterArray = alphabet.filter(item => item ==="c");
-console.log("After filter:", filterArray);
-
+//filter
+let filterExample = alphabet.filter(item => item ==="c");
+console.log(filterExample);
 </script>
 <body>
     <h3>Array</h3>
