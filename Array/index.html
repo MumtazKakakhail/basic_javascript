@@ -32,9 +32,28 @@ console.log("Removed element:", firstElement);
 let indexOfElement = alphabet.indexOf("c");
 console.log("index of 'c':",indexOfElement);
 
+//unshift():
+alphabet.unshift("z");
+console.log("After unshift:",alphabet);
+
+//slice():
+let sliceArray = alphabet.slice("2,5");
+console.log("After slice:",sliceArray);
+
+//splice():
+alphabet.splice(2,2,"x","y");
+console.log("After splice:",alphabet);
+
+//find():
+let findElement = alphabet.find(item => item === "c");
+console.log("After find:", findElement);
+
+//filter():
+let filterArray = alphabet.filter(item => item ==="c");
+console.log("After filter:", filterArray);
 
 </script>
 <body>
-    
+    <h3>Array</h3>
 </body>
 </html>
