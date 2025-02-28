@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Array</title>
-</head>
-<script>
-    let alphabet =["a","b","c","d","c","c","c","c"]
+  </head>
+  <script>
+    let alphabet = ["a", "b", "c", "d", "c", "c", "c", "c"];
     //length
-console.log("length:",alphabet.length);
+    console.log("length:", alphabet.length);
 
-//concat():
-let newAlphabet = alphabet.concat(["k","l","m"]);
-console.log("concat:",newAlphabet);
+    //concat():
+    let newAlphabet = alphabet.concat(["k", "l", "m"]);
+    console.log("concat:", newAlphabet);
 
-//push():
-alphabet.push("e");
-console.log("push:",alphabet);
+    //push():
+    alphabet.push("e");
+    console.log("push:", alphabet);
 
-//pop():
-let lastElement = alphabet.pop();
-console.log("pop:",alphabet);
-console.log("removed element:",lastElement);
+    //pop():
+    let lastElement = alphabet.pop();
+    console.log("pop:", alphabet);
+    console.log("removed element:", lastElement);
 
-//shift():
-let firstElement = alphabet.shift();
-console.log("shift:",alphabet);
-console.log("Removed element:", firstElement);
+    //shift():
+    let firstElement = alphabet.shift();
+    console.log("shift:", alphabet);
+    console.log("Removed element:", firstElement);
 
-//indexOf():
-let indexOfElement = alphabet.indexOf("c");
-console.log("index of 'c':",indexOfElement);
-  
-//unshift():
-alphabet.unshift("z");
-console.log("unshift:",alphabet);
- 
-//slice():
-let sliceArray = alphabet.slice(2,6);
-console.log("slice:",sliceArray);
-console.log(alphabet);
+    //indexOf():
+    let indexOfElement = alphabet.indexOf("c");
+    console.log("index of 'c':", indexOfElement);
 
-//splice():
-alphabet.splice(1,2,"x","y");
-console.log("splice:",alphabet);
+    //unshift():
+    alphabet.unshift("z");
+    console.log("unshift:", alphabet);
 
-//find
-let findExample = alphabet.find(item => item=== "c");
-console.log(findExample);
+    //slice():
+    let sliceArray = alphabet.slice(2, 6);
+    console.log("slice:", sliceArray);
+    console.log(alphabet);
 
-//filter
-let filterExample = alphabet.filter(item => item ==="c");
-console.log(filterExample);
-</script>
-<body>
+    //splice():
+    alphabet.splice(1, 2, "x", "y");
+    console.log("splice:", alphabet);
+
+    //find
+    let findExample = alphabet.find((item) => item === "c");
+    console.log(findExample);
+
+    //filter
+    let filterExample = alphabet.filter((item) => item === "c");
+    console.log(filterExample);
+  </script>
+  <body>
     <h3>Array</h3>
-</body>
+  </body>
 </html>
