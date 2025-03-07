@@ -22,3 +22,30 @@ function removeElement() {
   let removeELe = document.getElementById("remove");
   removeELe.remove();
 }
+
+//DOM Manipulation Example
+
+let webDevelopment = [
+    { Name: "Daniyal", class: "basic" },
+    { Name: "saliha", class: "basic" },
+    { Name: "Sameer", class: "Advance" },
+    { Name: "Sartaj", class: "Advance" },
+    { Name: "Naji", class: "basic" },
+    { Name: "shoaib", class: "Advance" },
+    { Name: "Mumtaz", class: "basic" },
+  ];
+  
+  let advanceStd = document.getElementById("stdData");
+  
+  let filteredAdvStd = webDevelopment
+    .filter((stds) => {
+      return stds.class === "Advance";
+    })
+    .map((advStds) => {
+      return `<li>${advStds.Name}</li>`;
+    })
+    .join("");
+  
+  console.log(filteredAdvStd);
+  
+  advanceStd.innerHTML = filteredAdvStd;
