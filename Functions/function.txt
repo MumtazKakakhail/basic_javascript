@@ -1,0 +1,23 @@
+Functions are blocks of code that perform a specific task. They help organize code by breaking it into smaller,
+ reusable parts. They take input, process it, and return a result.
+Function Declaration: It's like announcing a task. You define what the function will do, giving it a name and specifying
+what it needs to work.
+Function Expressions: This is like a function that's also a value. You can create it and assign it to a variable,
+making it super flexible. It's like saying, "Here's something that does a job, and I can use it wherever I need."
+Function Parameters and Arguments: Think of parameters like variables inside a function. They're like placeholders waiting for values. When you call the function and put values in those placeholders, those values are called arguments. It's like giving specific information for the function to work on.
+Return Statement: It's like the answer you get after doing a task. When a function finishes its job,
+it can give you something back. The return statement sends that value back to where the function was called.
+It's like getting the result after the function does its thing.
+
+Anonymous Functions:
+Anonymous functions are functions that do not have a name.They are often used when a function
+is only needed for a short period and does not need to be reused elsewhere in the code.
+Arrow functions: arrow function are a concise way of writing anonymous functions.They are defined using
+the => operator, which is followed by the function parameters and the function body.
+Function Scope: Variables declared inside a function are only accessible within that function.
+ They are not visible outside of the function.
+ Block Scope: Variables declared with let and const are block-scoped, meaning they are only
+  accessible within the block(e.g., within curly braces {}) where they are defined.
+Callbacks and Higher Order Functions:
+function which takes another function as an arguments is called Higher Order function.
+function which get passed as an argument to another function is called  Callbacks function.
